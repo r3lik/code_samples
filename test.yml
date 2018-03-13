@@ -1,0 +1,19 @@
+---
+
+# Dict of dicts
+blockstorage:
+  BCH:
+    UUID: UUID="7591d65d-7062-4cfb-9165-a344c4687e82"
+    mount_point: "/mnt/BCH_2"
+  BTC:
+    UUID: UUID="17847f74-d99c-40f7-9635-cf8a5ad1e556"
+    mount_point: "/mnt/BTC_2"
+
+# Dict of lists
+blockstorage:
+  - BCH: 
+    UUID: UUID="7591d65d-7062-4cfb-9165-a344c4687e82"
+    mount_point: "/mnt/BCH_2"
+  - BTC:
+    UUID: UUID="17847f74-d99c-40f7-9635-cf8a5ad1e556"
+    mount_point: "/mnt/BTC_2"

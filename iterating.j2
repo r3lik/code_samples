@@ -1,0 +1,20 @@
+# "{{ ansible_banner }}"
+
+{# Using dicts of dicts #}
+
+{% for host in groups['test'] %}
+{% for key, value in blockstorage.iteritems() %}
+{{ value.UUID }} {{ value.mount_point }}
+{%  endfor %}
+{% endfor %}
+
+{# Using dict of lists #}
+
+{#
+{% for host in groups['test'] %}
+{%  for blockchain in blockstorage %}
+{{ blockchain.UUID }} {{ blockchain.mount_point }}
+{%  endfor %}
+{% endfor %}
+#}
+
