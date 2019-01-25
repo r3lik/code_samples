@@ -3,7 +3,7 @@
 {# Using dicts of dicts #}
 
 {% for host in groups['test'] %}
-{% for key, value in blockstorage.iteritems() %}
+{%  for key, value in blockstorage.iteritems() %}
 {{ value.UUID }} {{ value.mount_point }}
 {%  endfor %}
 {% endfor %}
