@@ -16,9 +16,26 @@ func main() {
 	}
 	p2 := person{
 		first:    "Marie",
-		last:     "Black",
+		last:     "White",
 		favFlave: []string{"Vanilla", "Chocolate"},
 	}
+
+	m := map[string]person{
+		p1.last: p1,
+		p2.last: p2,
+	}
+
+	fmt.Println("The map is:", m)
+
+	for _, v := range m {
+		fmt.Println(v.first)
+		fmt.Println(v.last)
+		for _, v := range v.favFlave {
+			fmt.Println(v)
+		}
+		fmt.Println("-----")
+	}
+
 	// more complicated way of creating a slice of person and grouping the persons
 	people := []person{p1, p2}
 	for _, p := range people {
