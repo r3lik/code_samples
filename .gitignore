@@ -1,3 +1,4 @@
 rust/.vscode/
 rust/mike/target/
 rust/rust-book/.vscode/settings.json
+rust/rust-book/guessing_game/target/
