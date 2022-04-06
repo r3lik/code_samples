@@ -7,6 +7,7 @@ fn main() {
     println!("The value of x is {}", x);
 
     // shadowing
+    // declare a new variable with the same name as a previous variable
 
     let x = 5;
 
